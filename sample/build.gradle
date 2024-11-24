@@ -5,12 +5,13 @@ plugins {
 
 android {
     namespace 'com.tyganeutronics.activator'
-    compileSdk 34
+    compileSdk 35
+    buildToolsVersion '35.0.0'
 
     defaultConfig {
         applicationId "com.tyganeutronics.activator"
         minSdk 21
-        targetSdk 34
+        targetSdk 35
         versionCode 7
         versionName "$library_version"
     }
@@ -33,7 +34,7 @@ android {
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.core:core-ktx:1.15.0'
 
     implementation project(path: ':library')
 
